@@ -10,20 +10,28 @@ const arr = ref(["Web Developer", "Student"])
 <template>
     <section>
         <div class="introduction">
-            <h3>Mein Name ist <span class="colored-text">Dominik D.</span></h3>
+            <!-- <h3>Mein Name ist <span class="colored-text">Dominik D.</span></h3> -->
+            <h3>Mein Name ist
+                <span class="glowing-text-container">
+                    <span>D</span>
+                    <span>o</span>
+                    <span>m</span>
+                    <span>i</span>
+                    <span>n</span>
+                    <span>i</span>
+                    <span>k</span>
+                    <span>&nbsp;</span>
+                    <span>D</span>
+                    <span>.</span>
+                </span>
+            </h3>
             <VueWriter :array="arr" :delay="1000"></VueWriter>
 
-
-            <div class="socials">
-                <a href="https://github.com/Flashrex" target="_blank">
-                    <img class="social_icon" src="../assets/icons/github.svg">
-                </a>
-                <a href="https://www.linkedin.com/in/dominik-duda-89b10b229/" target="_blank">
-                    <img class="social_icon" src="../assets/icons/linkedin.svg">
-                </a>
-                <a href="mailto:duda.dominik96@gmail.com" target="_blank">
-                    <img class="social_icon" src="../assets/icons/mail.svg">
-                </a>
+            <div class="techstack">
+                <img class="techicon" src="https://skillicons.dev/icons?i=cs,js">
+                <img class="techicon" src="https://skillicons.dev/icons?i=html,css">
+                <img class="techicon" src="https://skillicons.dev/icons?i=mysql,mongodb">
+                <img class="techicon" src="https://skillicons.dev/icons?i=vue,react">
             </div>
 
             <button><a href="#aboutme" class="button-text">Kennenlernen</a></button>
@@ -32,6 +40,11 @@ const arr = ref(["Web Developer", "Student"])
 </template>
 
 <style>
+:root {
+    --glow-anim-time: 3s;
+    --glow-anim-delay-mult: 0.1s;
+}
+
 .typed {
     font-size: 4em;
     font-weight: 700;
@@ -108,10 +121,80 @@ h3 {
     line-height: 1.0;
 }
 
+.glowing-text-container {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.glowing-text-container>span {
+
+    font-size: inherit;
+    font-weight: inherit;
+    animation: glow var(--glow-anim-time) ease-in-out infinite;
+}
+
+@keyframes glow {
+
+    0%,
+    100% {
+        background: linear-gradient(to right, var(--color-highlight), #17d898);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        text-shadow: 0 0 12px var(--color-highlight), 0 0 25px var(--color-highlight), 0 0 50px var(--color-highlight);
+        opacity: 1;
+    }
+
+    10%,
+    90% {
+        background: var(--color-highlight);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        text-shadow: none;
+        opacity: 0.8;
+    }
+}
+
+.glowing-text-container>span:nth-child(1) {
+    animation-delay: var(--glow-anim-delay-mult);
+}
+
+.glowing-text-container>span:nth-child(2) {
+    animation-delay: calc(var(--glow-anim-delay-mult) * 2);
+}
+
+.glowing-text-container>span:nth-child(3) {
+    animation-delay: calc(var(--glow-anim-delay-mult) * 3);
+}
+
+.glowing-text-container>span:nth-child(4) {
+    animation-delay: calc(var(--glow-anim-delay-mult) * 4);
+}
+
+.glowing-text-container>span:nth-child(5) {
+    animation-delay: calc(var(--glow-anim-delay-mult) * 5);
+}
+
+.glowing-text-container>span:nth-child(6) {
+    animation-delay: calc(var(--glow-anim-delay-mult) * 6);
+}
+
+.glowing-text-container>span:nth-child(7) {
+    animation-delay: calc(var(--glow-anim-delay-mult) * 7);
+}
+
+.glowing-text-container>span:nth-child(9) {
+    animation-delay: calc(var(--glow-anim-delay-mult) * 8);
+}
+
+.glowing-text-container>span:nth-child(10) {
+    animation-delay: calc(var(--glow-anim-delay-mult) * 9);
+}
+
 .colored-text {
     font-size: inherit;
     font-weight: inherit;
-
 
     background: linear-gradient(to right, var(--color-highlight), #17d898);
     -webkit-text-fill-color: transparent;
@@ -119,24 +202,22 @@ h3 {
     -webkit-background-clip: text;
 }
 
-.socials {
+.techstack {
     margin-top: 0.5rem;
     display: flex;
     gap: 1rem;
 }
 
-.social_icon {
-    width: 50px;
+.techicon {
+    width: 75px;
     aspect-ratio: 1/1;
     transition: transform 1s;
-    filter: var(--color-icon);
 }
 
-.social_icon:hover,
-.social_icon:active {
+.techicon:hover,
+.techicon:active {
     cursor: pointer;
-    transform: scale(1.2);
-    filter: invert(95%) sepia(29%) saturate(2788%) hue-rotate(61deg) brightness(103%) contrast(83%);
+    transform: scale(1.1);
 }
 
 button {
@@ -165,7 +246,7 @@ button::before {
     content: "";
     width: 0%;
     height: 100%;
-    background-color: var(--color-highlight);
+    background-color: linear-gradient(to right, var(--color-highlight), #17d898);
     transition: all 1s;
     position: absolute;
     top: 0;
@@ -175,7 +256,7 @@ button::before {
 button:hover,
 button:active {
     cursor: pointer;
-    color: var(--color-highlight);
+    color: linear-gradient(to right, var(--color-highlight), #17d898);
 }
 
 button::before,
@@ -185,7 +266,7 @@ button::after {
     height: 2px;
     position: absolute;
     transition: all 0.2s linear;
-    background: var(--color-highlight);
+    background: linear-gradient(to right, var(--color-highlight), #17d898);
 }
 
 .button-text::before,
@@ -208,7 +289,6 @@ button:hover .button-text::after {
     height: 100%;
 }
 
-/*----- button 1 -----*/
 button::before,
 button::after {
     transition-delay: 0.2s;
@@ -263,8 +343,8 @@ button:hover .button-text::after {
         font-size: 2em;
     }
 
-    .social_icon {
-        width: 30px;
+    .techicon {
+        width: 50px;
     }
 }
 </style> 
