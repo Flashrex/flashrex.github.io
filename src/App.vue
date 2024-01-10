@@ -2,6 +2,7 @@
 import Introduction from './components/Introduction.vue';
 import AboutMe from './components/AboutMe.vue';
 import Projects from './components/Projects.vue';
+import Contact from './components/Contact.vue';
 
 </script>
 
@@ -14,6 +15,7 @@ import Projects from './components/Projects.vue';
     <Introduction></Introduction>
     <AboutMe></AboutMe>
     <Projects></Projects>
+    <Contact></Contact>
   </main>
 </template>
 
