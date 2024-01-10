@@ -152,7 +152,7 @@ h3 {
         background-clip: text;
         -webkit-background-clip: text;
         text-shadow: none;
-        opacity: 0.8;
+        opacity: 0.9;
     }
 }
 
