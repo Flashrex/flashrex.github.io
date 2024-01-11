@@ -9,7 +9,7 @@
             <h3>Über mich</h3>
             <div>
                 <p>
-                    Ich bin Student im B.Sc. Angewandte Informatik und entwickle leidenschaftlich gerne Websiten und
+                    Ich bin Student im B.Sc. Angewandte Informatik und entwickle leidenschaftlich gerne Webseiten und
                     -Applikationen.
                     Ich bin bereits vor meinem Studium durchs Modding auf die Programmierung aufmerksam geworden und liebe
                     es mich stets neu auszuprobieren.
