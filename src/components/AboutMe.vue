@@ -10,7 +10,7 @@
             <div>
                 <p>
                     Ich bin Student im B.Sc. Angewandte Informatik und entwickle leidenschaftlich gerne Webseiten und
-                    -Applikationen.
+                    -applikationen.
                     Ich bin bereits vor meinem Studium durchs Modding auf die Programmierung aufmerksam geworden und liebe
                     es mich stets neu auszuprobieren.
                     Derzeit beschäftige ich mich viel mit Frameworks wie Vue oder React.
