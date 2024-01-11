@@ -9,19 +9,12 @@
             <h3>Über mich</h3>
             <div>
                 <p>
-                    Ich bin Student im B.Sc. Angewandte Informatik und bin bereits seit einigen Jahren in der Modding-Szene
-                    unterwegs und konnte dort Kenntnisse in C# sowie Js sammeln.
-                    Über das Modding bin ich auf die Webentwicklung gestoßen und bin seit dem stetig daran neue Frameworks
-                    wie
-                    Vue oder React auszuprobieren aber mich auch mit dem Backend zu beschäftigen.
-                </p>
-                <p>
-                    Privat würde ich mich als sehr lernfähig bezeichnen da ich es mag ständig neue Dinge zu erlernen und
-                    mich stets weiter zu entwickeln.
-                    Darüberhinaus bin ich ein sehr freundlicher Mensch und komme in der Regel gut mit anderen aus.
-                    Bei meiner Arbeit ist es mir wichtig sie ordentlich und verantwortungsbewusst zu erledigen.
-                    Ich achte unteranderem darauf aktuelle Standarts wie Coding-Conventions einzuhalten und meinen Code
-                    ausreichend zu kommentieren.
+                    Ich bin Student im B.Sc. Angewandte Informatik und entwickle leidenschaftlich gerne Websiten und
+                    -Applikationen.
+                    Ich bin bereits vor meinem Studium durchs Modding auf die Programmierung aufmerksam geworden und liebe
+                    es mich stets neu auszuprobieren.
+                    Derzeit beschäftige ich mich viel mit Frameworks wie Vue oder React.
+                    Habe aber auch großes Interesse an der Backendprogrammierung.
                 </p>
             </div>
         </div>
@@ -64,7 +57,7 @@ section>img:hover {
 .text-container {
     position: relative;
     top: -7rem;
-    width: 50%;
+    width: 30%;
     height: 350px;
 
     display: flex;
