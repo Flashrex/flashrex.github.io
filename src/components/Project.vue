@@ -23,14 +23,16 @@ const props = defineProps(['index', 'data'])
                 </button>
             </div>
         </div>
-        <div class="image-container">
-            <img :src="'src/assets/project_thumbnails/' + props.data.image">
+        <div class="image-container"
+            :style="{ backgroundImage: 'url(' + `src/assets/project_thumbnails/${props.data.image}` + ')' }">
+            <!-- <img :src="'src/assets/project_thumbnails/' + props.data.image"> -->
         </div>
     </div>
 
     <div v-else class="project">
-        <div class="image-container">
-            <img :src="'src/assets/project_thumbnails/' + props.data.image">
+        <div class="image-container"
+            :style="{ backgroundImage: 'url(' + `src/assets/project_thumbnails/${props.data.image}` + ')' }">
+            <!-- <img :src="'src/assets/project_thumbnails/' + props.data.image"> -->
         </div>
         <div class="text-container">
             <h3>{{ props.data.headline }}</h3>
@@ -59,7 +61,8 @@ const props = defineProps(['index', 'data'])
     border-radius: 15px;
 
     width: 90%;
-    height: 50vh;
+    height: auto;
+    min-height: 42.5vh;
     padding: 2rem;
 
     display: flex;
@@ -108,7 +111,7 @@ button>img {
     width: 20px;
     filter: invert(42%) sepia(78%) saturate(5212%) hue-rotate(135deg) brightness(101%) contrast(84%);
     aspect-ratio: 1/1;
-
+    background-repeat: repeat-y;
 }
 
 button {
@@ -119,23 +122,21 @@ button {
 }
 
 .image-container {
-    /* background-color: rgba(165, 42, 42, 0.121); */
+    background-size: cover;
+
+    background-position-x: center;
 
     width: 50%;
-    overflow: hidden;
     border-radius: 15px;
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    transition: background-position 10s;
 }
 
-.image-container>img {
-    position: relative;
-    top: 0;
-    width: 100%;
-    transition: transform 20s;
-
-}
-
-.image-container>img:hover {
-    transform: translateY(-80%);
+.image-container:hover {
+    background-position-y: 100%;
     cursor: pointer;
 }
 

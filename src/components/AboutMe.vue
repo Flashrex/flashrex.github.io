@@ -7,12 +7,23 @@
 
         <div class="text-container">
             <h3>Über mich</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quasi cumque pariatur tempore eveniet sit
-                atque deleniti ut nemo quibusdam rem natus earum, architecto itaque numquam nesciunt perspiciatis fugiat
-                modi.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quasi cumque pariatur tempore eveniet sit
-                atque deleniti ut nemo quibusdam rem natus earum, architecto itaque numquam nesciunt perspiciatis fugiat
-                modi.</p>
+            <div>
+                <p>
+                    Ich bin Student im B.Sc. Angewandte Informatik und bin bereits seit einigen Jahren in der Modding-Szene
+                    unterwegs und konnte dort Kenntnisse in C# sowie Js sammeln.
+                    Über das Modding bin ich auf die Webentwicklung gestoßen und bin seit dem stetig daran neue Frameworks
+                    wie
+                    Vue oder React auszuprobieren aber mich auch mit dem Backend zu beschäftigen.
+                </p>
+                <p>
+                    Privat würde ich mich als sehr lernfähig bezeichnen da ich es mag ständig neue Dinge zu erlernen und
+                    mich stets weiter zu entwickeln.
+                    Darüberhinaus bin ich ein sehr freundlicher Mensch und komme in der Regel gut mit anderen aus.
+                    Bei meiner Arbeit ist es mir wichtig sie ordentlich und verantwortungsbewusst zu erledigen.
+                    Ich achte unteranderem darauf aktuelle Standarts wie Coding-Conventions einzuhalten und meinen Code
+                    ausreichend zu kommentieren.
+                </p>
+            </div>
         </div>
     </section>
 </template>
@@ -53,12 +64,16 @@ section>img:hover {
 .text-container {
     position: relative;
     top: -7rem;
-    width: 25%;
+    width: 50%;
     height: 350px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.text-container>div {
+    display: flex;
 }
 
 h3 {
@@ -71,10 +86,10 @@ h3 {
 
 p {
     color: rgba(255, 255, 255, 0.805);
-    line-height: 1.6;
+    line-height: 1.4;
     font-size: 1.2em;
     text-wrap: balance;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {

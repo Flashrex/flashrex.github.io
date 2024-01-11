@@ -6,7 +6,7 @@ const projects = ref([
     {
         headline: "Tesla Clone",
         description: "Dies ist ein Klon der offiziellen Website tesla.com. (Stand: Dezember 2023) Ich habe dabei darauf geachtet die Website möglichst genau nachzubauen und auch Effekte wie den Scroll-Snap-Effekt zu implementieren.",
-        image_path: "tesla.jpg",
+        image: "tesla.png",
         tags: ["2023", "html", "css", "javascript", "vueJS"],
         github: "https://github.com/Flashrex/tesla-clone",
         live: ""
@@ -14,7 +14,7 @@ const projects = ref([
     {
         headline: "Codingstube Discord Bot",
         description: "Dies ist ein Discord Bot den ich für meinen Discord Server mit rund 1000 Mitgliedern erstellt habe.",
-        image_path: "discord.jpg",
+        image: "discord.png",
         tags: ["2023", "c#", ".NET-Framework", "discordNET", "mysql"],
         github: "https://github.com/Flashrex/Codingstube-Bot",
         live: ""
@@ -22,7 +22,7 @@ const projects = ref([
     {
         headline: "Artlocker - Kunst Marktplatz",
         description: "Dieses Website ist als Uniprojekt entstanden. Nutzer können Bilder zum Verkauf einstellen, haben ein eigenes Profil, können aktuelle und beliebte Angebote einsehen und es werden Angebotsaufrufe sowie Favorisierungen getrackt.",
-        image: "car-rental.jpg",
+        image: "artlocker.png",
         tags: ["2022", "hmtl", "css", "javascript", "nodejs", "express", "passport", "mysql", "dotenv"],
         github: "https://github.com/Flashrex/ArtLocker",
         live: ""
@@ -30,7 +30,7 @@ const projects = ref([
     {
         headline: "Quiz App/Framework",
         description: "Diese App ist ein Framework mit dem man eigene Quizzes erstellen kann um sich zum Beispiel für eine Prüfung vorzubereiten. Es gibt verschiedene Fragetypen wie Single- und Multiple-Choice-Fragen und weitere.",
-        image_path: "quizapp.jpg",
+        image: "quizapp.png",
         tags: ["2023", "html", "css", "typescript", "vueJS"],
         github: "https://github.com/Flashrex/quiz-app",
         live: ""
@@ -38,7 +38,7 @@ const projects = ref([
     {
         headline: "Flashrex's Website",
         description: "Meine alte Website, die ich komplett in vanilla javascript erstellt habe. Es gibt unteranderem einen Cookie-Banner, Dark/Lightmode und eine Projektsuchleiste sowie einige kleine CSS Effekte.",
-        image_path: "website.jpg",
+        image: "website.png",
         tags: ["2022", "html", "css", "javascript"],
         github: "https://github.com/Flashrex/tesla-clone",
         live: ""
@@ -46,7 +46,7 @@ const projects = ref([
     {
         headline: "Tic Tac Toe",
         description: "Dies ist meine erste React App. Es ist das Spiel Tic Tac Toe. Alle Schritte werden in einer Liste gespeichert und man kann beliebig hin und herspringen.",
-        image_path: "myfirstapp.jpg",
+        image: "myfirstapp.png",
         tags: ["2022", "html", "css", "javascript", "react"],
         github: "https://github.com/Flashrex/FirstReactApp",
         live: ""
@@ -78,7 +78,7 @@ section {
 
 .project-container {
     width: 80%;
-    height: 90vh;
+    height: 95vh;
     padding: 2rem;
 
     display: flex;
