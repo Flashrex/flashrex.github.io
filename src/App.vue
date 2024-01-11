@@ -43,7 +43,7 @@ const projects = ref([
     description: "Meine alte Website, die ich komplett in vanilla javascript erstellt habe. Es gibt unteranderem einen Cookie-Banner, Dark/Lightmode und eine Projektsuchleiste sowie einige kleine CSS Effekte.",
     image: "website.png",
     tags: ["2022", "html", "css", "javascript"],
-    github: "https://github.com/Flashrex/tesla-clone",
+    github: "https://github.com/Flashrex/portfolio-old",
     live: ""
   },
   {
