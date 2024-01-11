@@ -23,15 +23,13 @@ const props = defineProps(['index', 'data'])
                 </button>
             </div>
         </div>
-        <div class="image-container"
-            :style="{ backgroundImage: 'url(' + `src/assets/project_thumbnails/${props.data.image}` + ')' }">
+        <div class="image-container" :style="{ backgroundImage: 'url(' + `${props.data.image}` + ')' }">
             <!-- <img :src="'src/assets/project_thumbnails/' + props.data.image"> -->
         </div>
     </div>
 
     <div v-else class="project">
-        <div class="image-container"
-            :style="{ backgroundImage: 'url(' + `src/assets/project_thumbnails/${props.data.image}` + ')' }">
+        <div class="image-container" :style="{ backgroundImage: 'url(' + `${props.data.image}` + ')' }">
             <!-- <img :src="'src/assets/project_thumbnails/' + props.data.image"> -->
         </div>
         <div class="text-container">
