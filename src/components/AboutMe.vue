@@ -108,7 +108,7 @@ p {
         width: 90%;
         max-height: 45%;
         padding: 1rem 0.5rem;
-        overflow-y: scroll;
+        overflow-y: auto;
         text-align: center;
         justify-content: flex-start;
     }

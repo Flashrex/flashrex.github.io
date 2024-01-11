@@ -144,8 +144,12 @@ button {
         flex-direction: column;
         justify-content: flex-start;
         padding: 0.5rem;
-        min-height: 50vh;
+        min-height: 45vh;
         overflow-y: scroll;
+    }
+
+    .tag-container {
+        justify-content: center;
     }
 
     .text-container {

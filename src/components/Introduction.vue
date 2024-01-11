@@ -223,6 +223,9 @@ h3 {
 
 
 @media (max-width: 768px) {
+    section {
+        justify-content: center;
+    }
 
     .introduction {
         left: 0;

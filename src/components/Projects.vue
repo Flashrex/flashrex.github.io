@@ -42,6 +42,10 @@ section {
 }
 
 @media (max-width: 768px) {
+    section {
+        margin-bottom: 4rem;
+    }
+
     .project-container {
         width: 100%;
         padding: 0.5rem;
