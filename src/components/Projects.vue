@@ -9,7 +9,7 @@ const projects = ref([
         image: "tesla.png",
         tags: ["2023", "html", "css", "javascript", "vueJS"],
         github: "https://github.com/Flashrex/tesla-clone",
-        live: ""
+        live: "https://tesla-clone-two-green.vercel.app/"
     },
     {
         headline: "Codingstube Discord Bot",
