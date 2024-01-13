@@ -13,8 +13,8 @@
                     -applikationen.
                     Ich bin bereits vor meinem Studium durchs Modding auf die Programmierung aufmerksam geworden und liebe
                     es mich stets neu auszuprobieren.
-                    Derzeit beschäftige ich mich viel mit Frameworks wie Vue oder React.
-                    Habe aber auch großes Interesse an der Backendprogrammierung.
+                    Derzeit beschäftige ich mich viel mit Frameworks wie Vue oder React habe aber auch großes Interesse an
+                    der Backendprogrammierung.
                 </p>
             </div>
         </div>

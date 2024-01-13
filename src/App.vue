@@ -18,7 +18,7 @@ const projects = ref([
     headline: "Codingstube Discord Bot",
     description: "Dies ist ein Discord Bot den ich für meinen Discord Server mit rund 1000 Mitgliedern erstellt habe.",
     image: "discord.png",
-    tags: ["2023", "c#", ".NET-Framework", "discordNET", "mysql"],
+    tags: ["2023", "c#", ".NET-Framework", "discordNET", "EF Core", "mysql"],
     github: "https://github.com/Flashrex/Codingstube-Bot",
     live: ""
   },
