@@ -9,11 +9,13 @@ const projects = ref([
   {
     headline: [
       "Tesla Clone",
+      "Tesla Clone",
       "Tesla Clone"
     ],
     description: [
       "Dies ist ein Klon der offiziellen Website tesla.com. (Stand: Dezember 2023) Ich habe dabei darauf geachtet die Website möglichst genau nachzubauen und auch Effekte wie den Scroll-Snap-Effekt zu implementieren.",
-      "This is a clone of the official website tesla.com. (As of December 2023) I made sure to recreate the website as closely as possible and also to implement effects such as the scroll snap effect."
+      "This is a clone of the official website tesla.com. (As of December 2023) I made sure to recreate the website as closely as possible and also to implement effects such as the scroll snap effect.",
+      "Tämä on klooni virallisesta verkkosivustosta tesla.com. (Joulukuu 2023) Huolehdin, että verkkosivusto luodaan mahdollisimman tarkasti ja toteutetaan myös vaikutuksia, kuten vieritysruudun vaikutus."
     ],
     image: "tesla.png",
     tags: ["2023", "html", "css", "javascript", "vueJS"],
@@ -23,11 +25,13 @@ const projects = ref([
   {
     headline: [
       "Codingstube Discord Bot",
+      "Codingstube Discord Bot",
       "Codingstube Discord Bot"
     ],
     description: [
       "Dies ist ein Discord Bot den ich für meinen Discord Server mit rund 1000 Mitgliedern erstellt habe.",
-      "This is a Discord Bot I created for my Discord Server with around 1000 members."
+      "This is a Discord Bot I created for my Discord Server with around 1000 members.",
+      "Tämä on Discord Bot, jonka loin Discord-palvelimelleni, jossa on noin 1000 jäsentä."
     ],
     image: "discord.png",
     tags: ["2023", "c#", ".NET-Framework", "discordNET", "EF Core", "mysql"],
@@ -37,11 +41,13 @@ const projects = ref([
   {
     headline: [
       "Artlocker - Kunst Marktplatz",
-      "Artlocker - Art Marketplace"
+      "Artlocker - Art Marketplace",
+      "Artlocker - Taide Markkinapaikka"
     ],
     description: [
       "Diese WebApplikation ist als Uniprojekt entstanden. Nutzer können Bilder zum Verkauf einstellen, haben ein eigenes Profil, können aktuelle und beliebte Angebote einsehen und es werden Angebotsaufrufe sowie Favorisierungen getrackt.",
-      "This web application was created as a university project. Users can upload pictures for sale, have their own profile, can view current and popular offers and offer calls and favorites are tracked."
+      "This web application was created as a university project. Users can upload pictures for sale, have their own profile, can view current and popular offers and offer calls and favorites are tracked.",
+      "Tämä verkkosovellus luotiin yliopistoprojektina. Käyttäjät voivat ladata kuvia myyntiin, heillä on oma profiili, he voivat tarkastella nykyisiä ja suosittuja tarjouksia ja tarjousten kutsuja ja suosikkeja seurataan."
     ],
     image: "artlocker.png",
     tags: ["2022", "hmtl", "css", "javascript", "nodejs", "express", "passport", "mysql", "dotenv"],
@@ -51,11 +57,13 @@ const projects = ref([
   {
     headline: [
       "Quiz App",
+      "Quiz App",
       "Quiz App"
     ],
     description: [
       "Diese App ist ein Framework mit dem man eigene Quizzes erstellen kann um sich zum Beispiel für eine Prüfung vorzubereiten. Es gibt verschiedene Fragetypen wie Single- und Multiple-Choice-Fragen und weitere.",
-      "This app is a framework with which you can create your own quizzes to prepare for an exam, for example. There are different types of questions such as single and multiple choice questions and more."
+      "This app is a framework with which you can create your own quizzes to prepare for an exam, for example. There are different types of questions such as single and multiple choice questions and more.",
+      "Tämä sovellus on kehys, jonka avulla voit luoda omia tietovisoja valmistautuaksesi esimerkiksi tenttiin. Kysymyksiä on erilaisia, kuten yksittäisiä ja monivalintakysymyksiä ja paljon muuta."
     ],
     image: "quizapp.png",
     tags: ["2023", "html", "css", "typescript", "vueJS"],
@@ -65,11 +73,13 @@ const projects = ref([
   {
     headline: [
       "Flashrex's Website",
+      "Flashrex's Website",
       "Flashrex's Website"
     ],
     description: [
       "Meine alte Website, die ich komplett in vanilla javascript erstellt habe. Es gibt unteranderem einen Cookie-Banner, Dark/Lightmode und eine Projektsuchleiste sowie einige kleine CSS Effekte.",
-      "My old website, which I created completely in vanilla javascript. There is a cookie banner, dark/light mode and a project search bar as well as some small CSS effects."
+      "My old website, which I created completely in vanilla javascript. There is a cookie banner, dark/light mode and a project search bar as well as some small CSS effects.",
+      "Vanha verkkosivustoni, jonka loin kokonaan vaniljajavalla. Siinä on evästeviesti, tumma / vaalea tila ja projektihakupalkki sekä joitain pieniä CSS-vaikutuksia."
     ],
     image: "website.png",
     tags: ["2022", "html", "css", "javascript"],
@@ -79,11 +89,13 @@ const projects = ref([
   {
     headline: [
       "Tic Tac Toe",
+      "Tic Tac Toe",
       "Tic Tac Toe"
     ],
     description: [
       "Dies ist meine erste React App. Es ist das Spiel Tic Tac Toe. Alle Schritte werden in einer Liste gespeichert und man kann beliebig hin und herspringen.",
-      "This is my first React App. It is the game Tic Tac Toe. All steps are saved in a list and you can jump back and forth as you like."
+      "This is my first React App. It is the game Tic Tac Toe. All steps are saved in a list and you can jump back and forth as you like.",
+      "Tämä on ensimmäinen React-sovellukseni. Se on Tic Tac Toe -peli. Kaikki vaiheet tallennetaan luetteloon ja voit hypätä edestakaisin haluamallasi tavalla."
     ],
     image: "myfirstapp.png",
     tags: ["2022", "html", "css", "javascript", "react"],
@@ -102,6 +114,9 @@ switch (navigator.language) {
   case "en-GB":
   case "en":
     lang.value = 1;
+    break;
+  case "fi":
+    lang.value = 2;
     break;
   default:
     lang.value = 1;

@@ -4,11 +4,13 @@ const props = defineProps(['useLanguage']);
 const data = {
     text_0: [
         "Über mich",
-        "About me"
+        "About me",
+        "Minusta"
     ],
     text_1: [
         "Ich bin Student im B.Sc. Angewandte Informatik und entwickle leidenschaftlich gerne Webseiten und -applikationen. Ich bin bereits vor meinem Studium durchs Modding auf die Programmierung aufmerksam geworden und liebe es mich stets neu auszuprobieren. Derzeit beschäftige ich mich viel mit Frameworks wie Vue oder React habe aber auch großes Interesse an der Backendprogrammierung.",
-        "I am a student in B.Sc. Applied Computer Science and I love to develop websites and applications. I became aware of programming through modding before I started my studies and I love to try out new things. At the moment I am working a lot with frameworks like Vue or React but I am also very interested in backend programming."
+        "I am a student in B.Sc. Applied Computer Science and I love to develop websites and applications. I became aware of programming through modding before I started my studies and I love to try out new things. At the moment I am working a lot with frameworks like Vue or React but I am also very interested in backend programming.",
+        "Olen opiskelija B.Sc. Sovellettu tietojenkäsittelytiede ja rakastan kehittää verkkosivustoja ja sovelluksia. Tulin tietoiseksi ohjelmoinnista muokkauksen kautta ennen kuin aloitin opintoni, ja rakastan kokeilla uusia asioita. Tällä hetkellä työskentelen paljon Vue- tai React-kehyksillä, mutta olen myös erittäin kiinnostunut backend-ohjelmoinnista."
     ]
 }
 

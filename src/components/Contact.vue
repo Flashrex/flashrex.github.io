@@ -5,11 +5,13 @@ const props = defineProps(['useLanguage'])
 const data = {
     text_0: [
         "Kontakt",
-        "Contact"
+        "Contact",
+        "Yhteystiedot"
     ],
     text_1: [
         "Standort",
-        "Location"
+        "Location",
+        "Sijainti"
     ]
 }
 

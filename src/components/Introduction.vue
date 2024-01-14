@@ -10,11 +10,13 @@ const arr = ref(["Web Developer", "Student"])
 const data = {
     text_0: [
         "Mein Name ist",
-        "My name is"
+        "My name is",
+        "Nimeni on"
     ],
     text_1: [
         "Kennenlernen",
-        "Get to know me"
+        "Get to know me",
+        "Tutustu minuun"
     ]
 }
 
