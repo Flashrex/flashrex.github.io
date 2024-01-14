@@ -34,7 +34,7 @@ const arr = ref(["Web Developer", "Student"])
                 <img class="techicon" src="https://skillicons.dev/icons?i=vue,react">
             </div>
 
-            <button><a href="#aboutme" class="button-text">Kennenlernen</a></button>
+            <a href="#aboutme"><button><span class="button-text">Kennenlernen</span></button></a>
         </div>
     </section>
 </template>

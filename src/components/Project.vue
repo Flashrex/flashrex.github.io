@@ -13,14 +13,18 @@ const props = defineProps(['index', 'data'])
                 <span v-for="(item, index) in props.data.tags" class="tag">{{ item }}</span>
             </div>
             <div class="button-container">
-                <button v-if="props.data.github != ''">
-                    <a class="button-text" :href="props.data.github" target="_blank">Code</a>
-                    <img src="../assets/icons/github_alt.svg" alt="">
-                </button>
-                <button v-if="props.data.live != ''">
-                    <a class="button-text" :href="props.data.live" target="_blank">Live Demo</a>
-                    <img src="../assets/icons/external.svg" alt="">
-                </button>
+                <a v-if="props.data.github != ''" :href="props.data.github" target="_blank" class="button-link">
+                    <button>
+                        <span class="button-text">Code</span>
+                        <img src="../assets/icons/github_alt.svg" alt="">
+                    </button>
+                </a>
+                <a v-if="props.data.live != ''" :href="props.data.live" target="_blank" class="button-link">
+                    <button>
+                        <span class="button-text">Live Demo</span>
+                        <img src="../assets/icons/external.svg" alt="">
+                    </button>
+                </a>
             </div>
         </div>
         <div class="image-container" :style="{ backgroundImage: 'url(' + `${props.data.image}` + ')' }">
@@ -39,14 +43,18 @@ const props = defineProps(['index', 'data'])
                 <span v-for="(item, index) in props.data.tags" class="tag">{{ item }}</span>
             </div>
             <div class="button-container">
-                <button v-if="props.data.github != ''">
-                    <a class="button-text" :href="props.data.github" target="_blank">Code</a>
-                    <img src="../assets/icons/github_alt.svg" alt="">
-                </button>
-                <button v-if="props.data.live != ''">
-                    <a class="button-text" :href="props.data.live" target="_blank">Live Demo</a>
-                    <img src="../assets/icons/external.svg" alt="">
-                </button>
+                <a v-if="props.data.github != ''" :href="props.data.github" target="_blank" class="button-link">
+                    <button>
+                        <span class="button-text">Code</span>
+                        <img src="../assets/icons/github_alt.svg" alt="">
+                    </button>
+                </a>
+                <a v-if="props.data.live != ''" :href="props.data.live" target="_blank" class="button-link">
+                    <button>
+                        <span class="button-text">Live Demo</span>
+                        <img src="../assets/icons/external.svg" alt="">
+                    </button>
+                </a>
             </div>
         </div>
     </div>
@@ -103,6 +111,10 @@ p {
 .button-container {
     display: flex;
     justify-content: space-around;
+}
+
+.button-link {
+    text-decoration: none;
 }
 
 button>img {
