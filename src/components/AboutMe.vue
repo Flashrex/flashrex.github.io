@@ -1,4 +1,17 @@
 <script setup>
+const props = defineProps(['useLanguage']);
+
+const data = {
+    text_0: [
+        "Über mich",
+        "About me"
+    ],
+    text_1: [
+        "Ich bin Student im B.Sc. Angewandte Informatik und entwickle leidenschaftlich gerne Webseiten und -applikationen. Ich bin bereits vor meinem Studium durchs Modding auf die Programmierung aufmerksam geworden und liebe es mich stets neu auszuprobieren. Derzeit beschäftige ich mich viel mit Frameworks wie Vue oder React habe aber auch großes Interesse an der Backendprogrammierung.",
+        "I am a student in B.Sc. Applied Computer Science and I love to develop websites and applications. I became aware of programming through modding before I started my studies and I love to try out new things. At the moment I am working a lot with frameworks like Vue or React but I am also very interested in backend programming."
+    ]
+}
+
 </script>
 
 <template>
@@ -6,15 +19,10 @@
         <img src="../assets/Bild1.jpg" loading="lazy">
 
         <div class="text-container">
-            <h3>Über mich</h3>
+            <h3>{{ data.text_0[props.useLanguage] }}</h3>
             <div>
                 <p>
-                    Ich bin Student im B.Sc. Angewandte Informatik und entwickle leidenschaftlich gerne Webseiten und
-                    -applikationen.
-                    Ich bin bereits vor meinem Studium durchs Modding auf die Programmierung aufmerksam geworden und liebe
-                    es mich stets neu auszuprobieren.
-                    Derzeit beschäftige ich mich viel mit Frameworks wie Vue oder React habe aber auch großes Interesse an
-                    der Backendprogrammierung.
+                    {{ data.text_1[props.useLanguage] }}
                 </p>
             </div>
         </div>

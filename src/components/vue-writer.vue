@@ -9,7 +9,7 @@ const charIndex = ref(0);
 
 const props = defineProps({
     array: {
-        type: String,
+        type: Array,
         required: true
     },
     eraseSpeed: {

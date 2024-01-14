@@ -2,7 +2,7 @@
 
 import Project from './Project.vue';
 
-const props = defineProps(["project1", "project2"])
+const props = defineProps(["project1", "project2", "useLanguage"])
 
 
 </script>
@@ -10,8 +10,8 @@ const props = defineProps(["project1", "project2"])
 <template>
     <section>
         <div class="project-container">
-            <Project :index="0" :data="props.project1"></Project>
-            <Project :index="1" :data="props.project2"></Project>
+            <Project :index="0" :data="props.project1" :useLanguage="props.useLanguage"></Project>
+            <Project :index="1" :data="props.project2" :useLanguage="props.useLanguage"></Project>
 
             <!-- <Project v-for="(item, index) in projects" :index="index" :data="item"></Project> -->
         </div>

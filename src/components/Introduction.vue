@@ -3,7 +3,20 @@ import VueWriter from '../components/vue-writer.vue';
 
 import { ref } from 'vue';
 
+const props = defineProps(['useLanguage']);
+
 const arr = ref(["Web Developer", "Student"])
+
+const data = {
+    text_0: [
+        "Mein Name ist",
+        "My name is"
+    ],
+    text_1: [
+        "Kennenlernen",
+        "Get to know me"
+    ]
+}
 
 </script>
 
@@ -11,7 +24,7 @@ const arr = ref(["Web Developer", "Student"])
     <section>
         <div class="introduction">
             <!-- <h3>Mein Name ist <span class="colored-text">Dominik D.</span></h3> -->
-            <h3>Mein Name ist
+            <h3>{{ data.text_0[props.useLanguage] }}
                 <span class="glowing-text-container">
                     <span>D</span>
                     <span>o</span>
@@ -34,7 +47,7 @@ const arr = ref(["Web Developer", "Student"])
                 <img class="techicon" src="https://skillicons.dev/icons?i=vue,react">
             </div>
 
-            <a href="#aboutme"><button><span class="button-text">Kennenlernen</span></button></a>
+            <a href="#aboutme"><button><span class="button-text">{{ data.text_1[props.useLanguage] }}</span></button></a>
         </div>
     </section>
 </template>

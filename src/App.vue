@@ -7,48 +7,84 @@ import { ref } from 'vue';
 
 const projects = ref([
   {
-    headline: "Tesla Clone",
-    description: "Dies ist ein Klon der offiziellen Website tesla.com. (Stand: Dezember 2023) Ich habe dabei darauf geachtet die Website möglichst genau nachzubauen und auch Effekte wie den Scroll-Snap-Effekt zu implementieren.",
+    headline: [
+      "Tesla Clone",
+      "Tesla Clone"
+    ],
+    description: [
+      "Dies ist ein Klon der offiziellen Website tesla.com. (Stand: Dezember 2023) Ich habe dabei darauf geachtet die Website möglichst genau nachzubauen und auch Effekte wie den Scroll-Snap-Effekt zu implementieren.",
+      "This is a clone of the official website tesla.com. (As of December 2023) I made sure to recreate the website as closely as possible and also to implement effects such as the scroll snap effect."
+    ],
     image: "tesla.png",
     tags: ["2023", "html", "css", "javascript", "vueJS"],
     github: "https://github.com/Flashrex/tesla-clone",
     live: "https://tesla-clone-two-green.vercel.app/"
   },
   {
-    headline: "Codingstube Discord Bot",
-    description: "Dies ist ein Discord Bot den ich für meinen Discord Server mit rund 1000 Mitgliedern erstellt habe.",
+    headline: [
+      "Codingstube Discord Bot",
+      "Codingstube Discord Bot"
+    ],
+    description: [
+      "Dies ist ein Discord Bot den ich für meinen Discord Server mit rund 1000 Mitgliedern erstellt habe.",
+      "This is a Discord Bot I created for my Discord Server with around 1000 members."
+    ],
     image: "discord.png",
     tags: ["2023", "c#", ".NET-Framework", "discordNET", "EF Core", "mysql"],
     github: "https://github.com/Flashrex/Codingstube-Bot",
     live: ""
   },
   {
-    headline: "Artlocker - Kunst Marktplatz",
-    description: "Diese WebApplikation ist als Uniprojekt entstanden. Nutzer können Bilder zum Verkauf einstellen, haben ein eigenes Profil, können aktuelle und beliebte Angebote einsehen und es werden Angebotsaufrufe sowie Favorisierungen getrackt.",
+    headline: [
+      "Artlocker - Kunst Marktplatz",
+      "Artlocker - Art Marketplace"
+    ],
+    description: [
+      "Diese WebApplikation ist als Uniprojekt entstanden. Nutzer können Bilder zum Verkauf einstellen, haben ein eigenes Profil, können aktuelle und beliebte Angebote einsehen und es werden Angebotsaufrufe sowie Favorisierungen getrackt.",
+      "This web application was created as a university project. Users can upload pictures for sale, have their own profile, can view current and popular offers and offer calls and favorites are tracked."
+    ],
     image: "artlocker.png",
     tags: ["2022", "hmtl", "css", "javascript", "nodejs", "express", "passport", "mysql", "dotenv"],
     github: "https://github.com/Flashrex/ArtLocker",
     live: ""
   },
   {
-    headline: "Quiz App/Framework",
-    description: "Diese App ist ein Framework mit dem man eigene Quizzes erstellen kann um sich zum Beispiel für eine Prüfung vorzubereiten. Es gibt verschiedene Fragetypen wie Single- und Multiple-Choice-Fragen und weitere.",
+    headline: [
+      "Quiz App",
+      "Quiz App"
+    ],
+    description: [
+      "Diese App ist ein Framework mit dem man eigene Quizzes erstellen kann um sich zum Beispiel für eine Prüfung vorzubereiten. Es gibt verschiedene Fragetypen wie Single- und Multiple-Choice-Fragen und weitere.",
+      "This app is a framework with which you can create your own quizzes to prepare for an exam, for example. There are different types of questions such as single and multiple choice questions and more."
+    ],
     image: "quizapp.png",
     tags: ["2023", "html", "css", "typescript", "vueJS"],
     github: "https://github.com/Flashrex/quiz-app",
     live: ""
   },
   {
-    headline: "Flashrex's Website",
-    description: "Meine alte Website, die ich komplett in vanilla javascript erstellt habe. Es gibt unteranderem einen Cookie-Banner, Dark/Lightmode und eine Projektsuchleiste sowie einige kleine CSS Effekte.",
+    headline: [
+      "Flashrex's Website",
+      "Flashrex's Website"
+    ],
+    description: [
+      "Meine alte Website, die ich komplett in vanilla javascript erstellt habe. Es gibt unteranderem einen Cookie-Banner, Dark/Lightmode und eine Projektsuchleiste sowie einige kleine CSS Effekte.",
+      "My old website, which I created completely in vanilla javascript. There is a cookie banner, dark/light mode and a project search bar as well as some small CSS effects."
+    ],
     image: "website.png",
     tags: ["2022", "html", "css", "javascript"],
     github: "https://github.com/Flashrex/portfolio-old",
     live: ""
   },
   {
-    headline: "Tic Tac Toe",
-    description: "Dies ist meine erste React App. Es ist das Spiel Tic Tac Toe. Alle Schritte werden in einer Liste gespeichert und man kann beliebig hin und herspringen.",
+    headline: [
+      "Tic Tac Toe",
+      "Tic Tac Toe"
+    ],
+    description: [
+      "Dies ist meine erste React App. Es ist das Spiel Tic Tac Toe. Alle Schritte werden in einer Liste gespeichert und man kann beliebig hin und herspringen.",
+      "This is my first React App. It is the game Tic Tac Toe. All steps are saved in a list and you can jump back and forth as you like."
+    ],
     image: "myfirstapp.png",
     tags: ["2022", "html", "css", "javascript", "react"],
     github: "https://github.com/Flashrex/FirstReactApp",
@@ -56,6 +92,21 @@ const projects = ref([
   }
 ])
 
+const lang = ref(1);
+
+switch (navigator.language) {
+  case "de":
+    lang.value = 0;
+    break;
+  case "en-US":
+  case "en-GB":
+  case "en":
+    lang.value = 1;
+    break;
+  default:
+    lang.value = 1;
+    break;
+}
 </script>
 
 <template>
@@ -64,12 +115,12 @@ const projects = ref([
   </header>
 
   <main>
-    <Introduction></Introduction>
-    <AboutMe></AboutMe>
-    <Projects :project1="projects[0]" :project2="projects[1]"></Projects>
-    <Projects :project1="projects[2]" :project2="projects[3]"></Projects>
-    <Projects :project1="projects[4]" :project2="projects[5]"></Projects>
-    <Contact></Contact>
+    <Introduction :useLanguage="lang"></Introduction>
+    <AboutMe :useLanguage="lang"></AboutMe>
+    <Projects :project1="projects[0]" :project2="projects[1]" :useLanguage="lang"></Projects>
+    <Projects :project1="projects[2]" :project2="projects[3]" :useLanguage="lang"></Projects>
+    <Projects :project1="projects[4]" :project2="projects[5]" :useLanguage="lang"></Projects>
+    <Contact :useLanguage="lang"></Contact>
   </main>
 </template>
 

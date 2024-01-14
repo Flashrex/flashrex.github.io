@@ -1,14 +1,14 @@
 <script setup>
 
-const props = defineProps(['index', 'data'])
+const props = defineProps(['index', 'data', 'useLanguage'])
 
 </script>
 
 <template>
     <div v-if="index % 2 == 0" class="project">
         <div class="text-container">
-            <h3>{{ props.data.headline }}</h3>
-            <p>{{ props.data.description }}</p>
+            <h3>{{ props.data.headline[props.useLanguage] }}</h3>
+            <p>{{ props.data.description[props.useLanguage] }}</p>
             <div class="tag-container">
                 <span v-for="(item, index) in props.data.tags" class="tag">{{ item }}</span>
             </div>
@@ -37,8 +37,8 @@ const props = defineProps(['index', 'data'])
             <!-- <img :src="'src/assets/project_thumbnails/' + props.data.image"> -->
         </div>
         <div class="text-container">
-            <h3>{{ props.data.headline }}</h3>
-            <p>{{ props.data.description }}</p>
+            <h3>{{ props.data.headline[props.useLanguage] }}</h3>
+            <p>{{ props.data.description[props.useLanguage] }}</p>
             <div class="tag-container">
                 <span v-for="(item, index) in props.data.tags" class="tag">{{ item }}</span>
             </div>
