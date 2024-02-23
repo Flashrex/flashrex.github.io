@@ -157,8 +157,8 @@ h3 {
         -webkit-text-fill-color: transparent;
         background-clip: text;
         -webkit-background-clip: text;
-        text-shadow: 0 0 12px var(--color-highlight), 0 0 25px var(--color-highlight), 0 0 50px var(--color-highlight);
-        opacity: 1;
+        text-shadow: 0 0 12px #17d898, 0 0 25px #17d898, 0 0 50px #17d898;
+        opacity: 0.9;
     }
 
     10%,
