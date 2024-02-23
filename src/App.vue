@@ -115,7 +115,7 @@ switch (navigator.language) {
   case "en":
     lang.value = 1;
     break;
-  case "fi":
+  case "fi-FI":
     lang.value = 2;
     break;
   default:
