@@ -143,6 +143,10 @@ h3 {
     font-size: inherit;
     font-weight: inherit;
     animation: glow var(--glow-anim-time) ease-in-out infinite;
+    background: linear-gradient(to right, var(--color-highlight), #17d898);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 @keyframes glow {
@@ -159,7 +163,7 @@ h3 {
 
     10%,
     90% {
-        background: var(--color-highlight);
+        background: linear-gradient(to right, var(--color-highlight), #17d898);
         -webkit-text-fill-color: transparent;
         background-clip: text;
         -webkit-background-clip: text;
@@ -202,16 +206,6 @@ h3 {
 
 .glowing-text-container>span:nth-child(10) {
     animation-delay: calc(var(--glow-anim-delay-mult) * 9);
-}
-
-.colored-text {
-    font-size: inherit;
-    font-weight: inherit;
-
-    background: linear-gradient(to right, var(--color-highlight), #17d898);
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
 }
 
 .techstack {
