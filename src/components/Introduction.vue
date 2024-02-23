@@ -35,9 +35,6 @@ const data = {
                     <span>n</span>
                     <span>i</span>
                     <span>k</span>
-                    <span>&nbsp;</span>
-                    <span>D</span>
-                    <span>.</span>
                 </span>
             </h3>
             <VueWriter :array="arr" :delay="1000"></VueWriter>
@@ -56,8 +53,8 @@ const data = {
 
 <style>
 :root {
-    --glow-anim-time: 3s;
-    --glow-anim-delay-mult: 0.1s;
+    --glow-anim-time: 2.5s;
+    --glow-anim-delay-mult: 0.2s;
 }
 
 .typed {
