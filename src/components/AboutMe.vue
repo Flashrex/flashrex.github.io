@@ -27,6 +27,15 @@ const data = {
                     {{ data.text_1[props.useLanguage] }}
                 </p>
             </div>
+
+            <div class="techcontainer">
+                <a href="https://www.github.com/flashrex" target="_blank"><img class="techicon"
+                        src="https://skillicons.dev/icons?i=github"></a>
+                <a href="https://www.linkedin.com/in/dominik-duda-89b10b229/" target="_blank"><img class="techicon"
+                        src="https://skillicons.dev/icons?i=linkedin"></a>
+                <a href="mailto:duda.dominik96@gmail.com" target="_blank"><img class="techicon"
+                        src="https://skillicons.dev/icons?i=gmail"></a>
+            </div>
         </div>
     </section>
 </template>
@@ -77,6 +86,21 @@ section>img:hover {
 
 .text-container>div {
     display: flex;
+}
+
+.techcontainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.techicon {
+    width: 40px;
+    aspect-ratio: 1/1;
+    transition: transform 1s;
+}
+
+.techicon:hover {
+    transform: translateY(-0.2rem);
 }
 
 h3 {
