@@ -44,6 +44,7 @@ const data = {
                 <img class="techicon" src="https://skillicons.dev/icons?i=html,css">
                 <img class="techicon" src="https://skillicons.dev/icons?i=mysql,mongodb">
                 <img class="techicon" src="https://skillicons.dev/icons?i=vue,react">
+                <img class="techicon" src="https://skillicons.dev/icons?i=git,postman">
             </div>
 
             <a href="#aboutme"><button><span class="button-text">{{ data.text_1[props.useLanguage] }}</span></button></a>
