@@ -17,9 +17,9 @@ const projects = ref([
       "This is a bugtracker. It is possible to report, edit and close bugs. There are teams and you can discuss the bugs within a team.",
       "Tämä on bugtracker. On mahdollista raportoida, muokata ja sulkea bugeja. On tiimejä ja voit keskustella bugeista tiimin sisällä."
     ],
-    image: "bugtracker.png",
+    image: "bugtracker_full.png",
     tags: ["2024", "html", "css", "javascript", "vueJS", "express", "nodejs", "mysql", "bcrypt", "passport"],
-    github: "https://github.com/Flashrex/bugtracker_full",
+    github: "https://github.com/Flashrex/bugtracker",
     live: ""
   },
   {
