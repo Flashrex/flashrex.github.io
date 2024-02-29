@@ -8,6 +8,22 @@ import { ref } from 'vue';
 const projects = ref([
   {
     headline: [
+      "Bugtracker",
+      "Bugtracker",
+      "Bugtracker"
+    ],
+    description: [
+      "Dies ist ein Bugtracker. Es ist möglich Bugs zu melden, zu bearbeiten und zu schließen. Es gibt Teams und man kann innerhalb eines Teams über die Bugs diskutieren.",
+      "This is a bugtracker. It is possible to report, edit and close bugs. There are teams and you can discuss the bugs within a team.",
+      "Tämä on bugtracker. On mahdollista raportoida, muokata ja sulkea bugeja. On tiimejä ja voit keskustella bugeista tiimin sisällä."
+    ],
+    image: "bugtracker.png",
+    tags: ["2024", "html", "css", "javascript", "vueJS", "express", "nodejs", "mysql", "bcrypt", "passport"],
+    github: "https://github.com/Flashrex/bugtracker",
+    live: ""
+  },
+  {
+    headline: [
       "Tesla Clone",
       "Tesla Clone",
       "Tesla Clone"
@@ -68,22 +84,6 @@ const projects = ref([
     image: "quizapp.png",
     tags: ["2023", "html", "css", "typescript", "vueJS"],
     github: "https://github.com/Flashrex/quiz-app",
-    live: ""
-  },
-  {
-    headline: [
-      "Flashrex's Website",
-      "Flashrex's Website",
-      "Flashrex's Website"
-    ],
-    description: [
-      "Meine alte Website, die ich komplett in vanilla javascript erstellt habe. Es gibt unteranderem einen Cookie-Banner, Dark/Lightmode und eine Projektsuchleiste sowie einige kleine CSS Effekte.",
-      "My old website, which I created completely in vanilla javascript. There is a cookie banner, dark/light mode and a project search bar as well as some small CSS effects.",
-      "Vanha verkkosivustoni, jonka loin kokonaan vaniljajavalla. Siinä on evästeviesti, tumma / vaalea tila ja projektihakupalkki sekä joitain pieniä CSS-vaikutuksia."
-    ],
-    image: "website.png",
-    tags: ["2022", "html", "css", "javascript"],
-    github: "https://github.com/Flashrex/portfolio-old",
     live: ""
   },
   {
