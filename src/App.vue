@@ -19,7 +19,7 @@ const projects = ref([
     ],
     image: "bugtracker.png",
     tags: ["2024", "html", "css", "javascript", "vueJS", "express", "nodejs", "mysql", "bcrypt", "passport"],
-    github: "https://github.com/Flashrex/bugtracker",
+    github: "https://github.com/Flashrex/bugtracker_full",
     live: ""
   },
   {
