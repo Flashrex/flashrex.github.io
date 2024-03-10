@@ -8,6 +8,22 @@ import { ref } from 'vue';
 const projects = ref([
   {
     headline: [
+      "Todo App",
+      "Todo App",
+      "Todo App"
+    ],
+    description: [
+      "Dies ist eine einfache Todo App. Es ist möglich Todos zu erstellen, zu bearbeiten und zu löschen. Die App beinhaltet User-Authentifizierung und -Autorisierung.",
+      "This is a simple Todo App. It is possible to create, edit and delete todos. The app includes user authentication and authorization.",
+      "Tämä on yksinkertainen Todo-sovellus. On mahdollista luoda, muokata ja poistaa tehtäviä. Sovellus sisältää käyttäjän tunnistuksen ja valtuutuksen."
+    ],
+    image: "todo.png",
+    tags: ["2024", "html", "css", "php", "mysql"],
+    github: "https://github.com/Flashrex/php-todolist",
+    live: ""
+  },
+  {
+    headline: [
       "Bugtracker",
       "Bugtracker",
       "Bugtracker"
@@ -84,22 +100,6 @@ const projects = ref([
     image: "quizapp.png",
     tags: ["2023", "html", "css", "typescript", "vueJS"],
     github: "https://github.com/Flashrex/quiz-app",
-    live: ""
-  },
-  {
-    headline: [
-      "Tic Tac Toe",
-      "Tic Tac Toe",
-      "Tic Tac Toe"
-    ],
-    description: [
-      "Dies ist meine erste React App. Es ist das Spiel Tic Tac Toe. Alle Schritte werden in einer Liste gespeichert und man kann beliebig hin und herspringen.",
-      "This is my first React App. It is the game Tic Tac Toe. All steps are saved in a list and you can jump back and forth as you like.",
-      "Tämä on ensimmäinen React-sovellukseni. Se on Tic Tac Toe -peli. Kaikki vaiheet tallennetaan luetteloon ja voit hypätä edestakaisin haluamallasi tavalla."
-    ],
-    image: "myfirstapp.png",
-    tags: ["2022", "html", "css", "javascript", "react"],
-    github: "https://github.com/Flashrex/FirstReactApp",
     live: ""
   }
 ])
