@@ -40,11 +40,11 @@ const data = {
             <VueWriter :array="arr" :delay="1000"></VueWriter>
 
             <div class="techstack">
-                <img class="techicon" src="https://skillicons.dev/icons?i=cs,js">
-                <img class="techicon" src="https://skillicons.dev/icons?i=html,css">
-                <img class="techicon" src="https://skillicons.dev/icons?i=mysql,mongodb">
-                <img class="techicon" src="https://skillicons.dev/icons?i=vue,react">
-                <img class="techicon" src="https://skillicons.dev/icons?i=git,postman">
+                <img class="techicon" src="https://skillicons.dev/icons?i=cs,js" alt="logo_cs_js">
+                <img class="techicon" src="https://skillicons.dev/icons?i=html,css" alt="logo_html_css">
+                <img class="techicon" src="https://skillicons.dev/icons?i=mysql,mongodb" alt="logo_mysql_mongodb">
+                <img class="techicon" src="https://skillicons.dev/icons?i=vue,react" alt="logo_vue_react">
+                <img class="techicon" src="https://skillicons.dev/icons?i=git,postman" alt="logo_git_postman">
             </div>
 
             <a href="#aboutme"><button><span class="button-text">{{ data.text_1[props.useLanguage] }}</span></button></a>

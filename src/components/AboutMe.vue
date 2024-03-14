@@ -18,7 +18,7 @@ const data = {
 
 <template>
     <section id="aboutme">
-        <img src="../assets/Bild1.jpg" loading="lazy">
+        <img src="../assets/Bild1.jpg" alt="passfoto" loading="lazy">
 
         <div class="text-container">
             <h3>{{ data.text_0[props.useLanguage] }}</h3>
@@ -29,11 +29,11 @@ const data = {
             </div>
 
             <div class="techcontainer">
-                <a href="https://www.github.com/flashrex" target="_blank"><img class="techicon"
+                <a href="https://www.github.com/flashrex" target="_blank"><img class="techicon" alt="github_logo"
                         src="https://skillicons.dev/icons?i=github"></a>
-                <a href="https://www.linkedin.com/in/dominik-duda-89b10b229/" target="_blank"><img class="techicon"
+                <a href="https://www.linkedin.com/in/dominik-duda-89b10b229/" target="_blank"><img class="techicon" alt="linkedin_logo"
                         src="https://skillicons.dev/icons?i=linkedin"></a>
-                <a href="mailto:duda.dominik96@gmail.com" target="_blank"><img class="techicon"
+                <a href="mailto:duda.dominik96@gmail.com" target="_blank"><img class="techicon" alt="gmail_logo"
                         src="https://skillicons.dev/icons?i=gmail"></a>
             </div>
         </div>

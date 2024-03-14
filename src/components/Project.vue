@@ -16,25 +16,23 @@ const props = defineProps(['index', 'data', 'useLanguage'])
                 <a v-if="props.data.github != ''" :href="props.data.github" target="_blank" class="button-link">
                     <button>
                         <span class="button-text">Code</span>
-                        <img src="../assets/icons/github_alt.svg" alt="">
+                        <img src="../assets/icons/github_alt.svg" alt="external_github_icon">
                     </button>
                 </a>
                 <a v-if="props.data.live != ''" :href="props.data.live" target="_blank" class="button-link">
                     <button>
                         <span class="button-text">Live Demo</span>
-                        <img src="../assets/icons/external.svg" alt="">
+                        <img src="../assets/icons/external.svg" alt="external_link_icon">
                     </button>
                 </a>
             </div>
         </div>
         <div class="image-container" :style="{ backgroundImage: 'url(' + `${props.data.image}` + ')' }">
-            <!-- <img :src="'src/assets/project_thumbnails/' + props.data.image"> -->
         </div>
     </div>
 
     <div v-else class="project">
         <div class="image-container" :style="{ backgroundImage: 'url(' + `${props.data.image}` + ')' }">
-            <!-- <img :src="'src/assets/project_thumbnails/' + props.data.image"> -->
         </div>
         <div class="text-container">
             <h3>{{ props.data.headline[props.useLanguage] }}</h3>
@@ -99,7 +97,7 @@ p {
 }
 
 .tag {
-    background: var(--color-highlight);
+    background: rgb(23, 99, 50);
     padding: 4px 12px;
     color: rgba(255, 255, 255, 0.805);
     margin: 2px;
