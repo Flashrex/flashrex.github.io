@@ -5,7 +5,10 @@ import { ref } from 'vue';
 
 const props = defineProps(['useLanguage']);
 
-const arr = ref(["Web Developer", "Student"])
+const arr = ref([
+    ["Softwareentwickler", "Student"],
+    ["Software Developer", "Student"]
+])
 
 const data = {
     text_0: [
@@ -37,7 +40,7 @@ const data = {
                     <span>k</span>
                 </span>
             </h3>
-            <VueWriter :array="arr" :delay="1000"></VueWriter>
+            <VueWriter :array="arr[props.useLanguage]" :delay="1000"></VueWriter>
 
             <div class="techstack">
                 <img class="techicon" src="https://skillicons.dev/icons?i=cs,js" alt="logo_cs_js">
@@ -47,7 +50,8 @@ const data = {
                 <img class="techicon" src="https://skillicons.dev/icons?i=git,postman" alt="logo_git_postman">
             </div>
 
-            <a href="#aboutme"><button><span class="button-text">{{ data.text_1[props.useLanguage] }}</span></button></a>
+            <a href="#aboutme"><button><span class="button-text">{{ data.text_1[props.useLanguage]
+                        }}</span></button></a>
         </div>
     </section>
 </template>
@@ -250,4 +254,4 @@ h3 {
         width: 50px;
     }
 }
-</style> 
+</style>
