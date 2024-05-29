@@ -5,10 +5,7 @@ import { ref } from 'vue';
 
 const props = defineProps(['useLanguage']);
 
-const arr = ref([
-    ["Softwareentwickler", "Student"],
-    ["Software Developer", "Student"]
-])
+const arr = ref([["Softwareentwickler", "Student"], ["Software Developer", "Student"], ["Ohjelmistokehittäjä", "Opiskelija"]])
 
 const data = {
     text_0: [

@@ -31,8 +31,8 @@ const data = {
             <div class="techcontainer">
                 <a href="https://www.github.com/flashrex" target="_blank"><img class="techicon" alt="github_logo"
                         src="https://skillicons.dev/icons?i=github"></a>
-                <a href="https://www.linkedin.com/in/dominik-duda-89b10b229/" target="_blank"><img class="techicon" alt="linkedin_logo"
-                        src="https://skillicons.dev/icons?i=linkedin"></a>
+                <a href="https://www.linkedin.com/in/dominik-duda-89b10b229/" target="_blank"><img class="techicon"
+                        alt="linkedin_logo" src="https://skillicons.dev/icons?i=linkedin"></a>
                 <a href="mailto:duda.dominik96@gmail.com" target="_blank"><img class="techicon" alt="gmail_logo"
                         src="https://skillicons.dev/icons?i=gmail"></a>
             </div>
@@ -140,11 +140,16 @@ p {
     .text-container {
         margin-top: 2rem;
         width: 90%;
-        max-height: 45%;
+        height: fit-content;
         padding: 1rem 0.5rem;
         overflow-y: auto;
         text-align: center;
         justify-content: flex-start;
+    }
+
+    .techcontainer {
+        margin-top: 1rem;
+        justify-content: center;
     }
 
     h3 {
