@@ -107,6 +107,7 @@ const projects = ref([
 const lang = ref(1);
 
 switch (navigator.language) {
+  case "de-DE":
   case "de":
     lang.value = 0;
     break;
