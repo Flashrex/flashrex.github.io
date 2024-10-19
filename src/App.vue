@@ -20,7 +20,7 @@ const projects = ref([
     image: "valomizer.png",
     tags: ["2024", "html", "css", "typescript", "vueJS", "nodejs", "express", "mysql"],
     github: "https://github.com/Flashrex/php-todolist",
-    live: ""
+    live: "https://valomizer.net"
   },
   {
     headline: [
