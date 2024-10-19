@@ -8,17 +8,17 @@ import { ref } from 'vue';
 const projects = ref([
   {
     headline: [
-      "Todo App",
-      "Todo App",
-      "Todo App"
+      "Valomizer",
+      "Valomizer",
+      "Valomizer"
     ],
     description: [
-      "Dies ist eine einfache Todo App. Es ist möglich Todos zu erstellen, zu bearbeiten und zu löschen. Die App beinhaltet User-Authentifizierung und -Autorisierung.",
-      "This is a simple Todo App. It is possible to create, edit and delete todos. The app includes user authentication and authorization.",
-      "Tämä on yksinkertainen Todo-sovellus. On mahdollista luoda, muokata ja poistaa tehtäviä. Sovellus sisältää käyttäjän tunnistuksen ja valtuutuksen."
+      "Valomizer ist eine App um zufällig Maps/Agents für das Spiel Valorant auszuwählen.",
+      "Valomizer is an app to randomly select maps/agents for the game Valorant.",
+      "Valomizer on sovellus, jolla voidaan valita satunnaisesti karttoja/agentteja peliin Valorant."
     ],
-    image: "todo.png",
-    tags: ["2024", "html", "css", "php", "mysql"],
+    image: "valomizer.png",
+    tags: ["2024", "html", "css", "typescript", "vueJS", "nodejs", "express", "mysql"],
     github: "https://github.com/Flashrex/php-todolist",
     live: ""
   },
@@ -34,7 +34,7 @@ const projects = ref([
       "Tämä on bugtracker. On mahdollista raportoida, muokata ja sulkea bugeja. On tiimejä ja voit keskustella bugeista tiimin sisällä."
     ],
     image: "bugtracker_full.png",
-    tags: ["2024", "html", "css", "typescript", "vueJS", "vueRouter", "express", "nodejs", "mysql", "bcrypt", "passport"],
+    tags: ["2024", "html", "css", "typescript", "vueJS", "nodejs", "express", "mysql", "bcrypt", "passport"],
     github: "https://github.com/Flashrex/bugtracker",
     live: ""
   },
