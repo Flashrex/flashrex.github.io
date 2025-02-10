@@ -19,7 +19,6 @@ const props = defineProps(["project1", "project2"])
 section {
     position: relative;
     width: 100%;
-    height: 100vh;
 
     display: flex;
     justify-content: center;
@@ -27,8 +26,6 @@ section {
 
 .project-container {
     width: 80%;
-    height: 95vh;
-    padding: 2rem;
 
     display: flex;
     flex-direction: column;
@@ -37,14 +34,10 @@ section {
 }
 
 @media (max-width: 768px) {
-    section {
-        margin-bottom: 4rem;
-    }
-
     .project-container {
         width: 100%;
+        height: auto;
         padding: 0.5rem;
     }
-
 }
 </style>

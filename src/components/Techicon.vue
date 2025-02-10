@@ -45,7 +45,6 @@ const computedWidth = computed(() => {
 
 <style scoped>
 .techicon {
-    aspect-ratio: 1/1;
     transition: transform 1s;
 }
 

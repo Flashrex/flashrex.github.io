@@ -50,23 +50,23 @@ const projects = ref([
 </script>
 
 <template>
-  <header>
-
-  </header>
-
   <main>
     <Language />
     <Introduction />
     <AboutMe />
-    <Projects :project1="projects[0]" :project2="projects[1]"></Projects>
-    <Projects :project1="projects[2]" :project2="projects[3]"></Projects>
-    <Projects :project1="projects[4]" :project2="projects[5]"></Projects>
+    <div class="projects-container">
+      <Projects :project1="projects[0]" :project2="projects[1]"></Projects>
+      <Projects :project1="projects[2]" :project2="projects[3]"></Projects>
+      <Projects :project1="projects[4]" :project2="projects[5]"></Projects>
+    </div>
     <Contact />
   </main>
 </template>
 
 <style scoped>
-main {
-  max-height: 100vh;
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 </style>

@@ -20,9 +20,9 @@ watch(locale, () => {
 <template>
     <section>
         <div class="introduction">
-            <div class="flex flex-center flex-gap-large">
+            <div class="headline">
                 <h3>{{ t('introduction.headline') }}</h3>
-                <GlowingText text="Dominik" font-size="4em"></GlowingText>
+                <GlowingText text="Dominik"></GlowingText>
             </div>
             <VueWriter :array="vueWriterArr" :delay="1000"></VueWriter>
 
@@ -53,6 +53,12 @@ section {
     left: 20%;
 }
 
+.headline {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 h3 {
     margin: 0;
     font-size: 4em;
@@ -61,8 +67,11 @@ h3 {
 }
 
 .techstack {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -80,13 +89,18 @@ h3 {
         flex-direction: column;
     }
 
+    .headline {
+        gap: 0.5rem;
+    }
+
     h3 {
         text-align: center;
         font-size: 2em;
+        white-space: nowrap;
     }
 
-    .techicon {
-        width: 50px;
+    .techstack {
+        justify-content: center;
     }
 }
 </style>

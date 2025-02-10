@@ -159,9 +159,9 @@ button {
     .project {
         flex-direction: column;
         justify-content: flex-start;
+        align-items: center;
         padding: 0.5rem;
-        min-height: 45vh;
-        overflow-y: scroll;
+        min-height: auto;
     }
 
     .tag-container {
@@ -176,6 +176,12 @@ button {
 
     .image-container {
         display: none;
+    }
+
+    .button-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 }

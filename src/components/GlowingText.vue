@@ -2,13 +2,12 @@
 
 const props = defineProps<{
     text: string,
-    fontSize: string,
 }>()
 
 </script>
 
 <template>
-    <div class="glowing-text-container" :style="{ fontSize: props.fontSize }">
+    <div class="glowing-text-container">
         <span v-for="letter in props.text.split('')" :key="letter">{{ letter }}</span>
     </div>
 </template>
@@ -21,6 +20,7 @@ const props = defineProps<{
 
 .glowing-text-container {
     font-weight: 700;
+    font-size: 4em;
 }
 
 .glowing-text-container>span {
@@ -90,5 +90,11 @@ const props = defineProps<{
 
 .glowing-text-container>span:nth-child(10) {
     animation-delay: calc(var(--glow-anim-delay-mult) * 9);
+}
+
+@media (max-width: 768px) {
+    .glowing-text-container {
+        font-size: 2em;
+    }
 }
 </style>
