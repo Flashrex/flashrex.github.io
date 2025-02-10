@@ -21,7 +21,13 @@ const props = defineProps(['index', 'data'])
                     </template>
                 </Button>
 
-                <Button v-if="props.data.live" text="Code" :href="props.data.live">
+                <Button v-if="props.data.live" text="Live" :href="props.data.live">
+                    <template #post>
+                        <img src="../assets/icons/external.svg" alt="external_link_icon">
+                    </template>
+                </Button>
+
+                <Button v-if="props.data.demo" text="Demo" :href="props.data.demo">
                     <template #post>
                         <img src="../assets/icons/external.svg" alt="external_link_icon">
                     </template>

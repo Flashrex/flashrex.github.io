@@ -10,45 +10,41 @@ import Language from './components/language.vue';
 const projects = ref([
   {
     name: "valomizer",
-    image: "valomizer.png",
+    image: "valomizer.webp",
     tags: ["2024", "html", "css", "typescript", "vueJS", "nodejs", "express", "mysql"],
     github: "https://github.com/Flashrex/valorant_randomizer",
     live: "https://valomizer.net"
   },
   {
     name: "bugtracker",
-    image: "bugtracker_full.png",
+    image: "bugtracker_full.webp",
     tags: ["2024", "html", "css", "typescript", "vueJS", "nodejs", "express", "mysql", "bcrypt", "passport"],
-    github: "https://github.com/Flashrex/bugtracker",
-    live: ""
+    github: "https://github.com/Flashrex/bugtracker"
   },
   {
     name: "tesla-clone",
-    image: "tesla.png",
+    image: "tesla.webp",
     tags: ["2023", "html", "css", "javascript", "vueJS"],
     github: "https://github.com/Flashrex/tesla-clone",
-    live: "https://tesla-clone-two-green.vercel.app/"
+    demo: "https://tesla-clone-two-green.vercel.app/"
   },
   {
     name: "discord-bot",
-    image: "discord.png",
+    image: "discord.webp",
     tags: ["2023", "c#", ".NET-Framework", "discordNET", "EF Core", "mysql"],
-    github: "https://github.com/Flashrex/Codingstube-Bot",
-    live: ""
+    github: "https://github.com/Flashrex/Codingstube-Bot"
   },
   {
     name: "artlocker",
-    image: "artlocker.png",
+    image: "artlocker.webp",
     tags: ["2022", "hmtl", "css", "javascript", "nodejs", "express", "passport", "mysql", "dotenv"],
-    github: "https://github.com/Flashrex/ArtLocker",
-    live: ""
+    github: "https://github.com/Flashrex/ArtLocker"
   },
   {
     name: "quiz-app",
-    image: "quizapp.png",
+    image: "quizapp.webp",
     tags: ["2023", "html", "css", "typescript", "vueJS"],
-    github: "https://github.com/Flashrex/quiz-app",
-    live: ""
+    github: "https://github.com/Flashrex/quiz-app"
   }
 ])
 </script>
