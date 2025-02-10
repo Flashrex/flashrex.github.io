@@ -5,7 +5,7 @@ import Projects from './components/sections/Projects.vue';
 import Contact from './components/sections/Contact.vue';
 import { ref } from 'vue';
 
-import Language from './components/language.vue';
+import Language from './components/Language.vue';
 
 const projects = ref([
   {

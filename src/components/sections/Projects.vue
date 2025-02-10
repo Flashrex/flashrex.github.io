@@ -1,6 +1,6 @@
 <script setup>
 
-import Project from '../project.vue';
+import Project from '../Project.vue';
 
 const props = defineProps(["project1", "project2"])
 </script>

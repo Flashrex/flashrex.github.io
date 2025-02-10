@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import VueWriter from '../vue-writer.vue';
-import Button from '../button.vue';
-import GlowingText from '../glowingText.vue';
+import VueWriter from '../Vue-writer.vue';
+import Button from '../Button.vue';
+import GlowingText from '../GlowingText.vue';
 
 import { useI18n } from 'vue-i18n';
 import { ref, watch } from 'vue';
-import Techicon from '../techicon.vue';
+import Techicon from '../Techicon.vue';
 
 const { t, locale } = useI18n();
 

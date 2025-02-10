@@ -1,6 +1,6 @@
 <script setup>
 
-import Button from './button.vue'
+import Button from './Button.vue'
 
 const props = defineProps(['index', 'data'])
 

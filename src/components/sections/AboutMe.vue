@@ -1,5 +1,5 @@
 <script setup>
-import Techicon from '../techicon.vue';
+import Techicon from '../Techicon.vue';
 
 </script>
 
