@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <section>
+    <section id="contact">
         <div class="contact-container">
             <h3>{{ $t('general.contact') }}</h3>
             <div>

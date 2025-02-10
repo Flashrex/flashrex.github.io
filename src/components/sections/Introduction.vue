@@ -15,6 +15,11 @@ watch(locale, () => {
     vueWriterArr.value = [ t('introduction.software-developer'), t('introduction.student') ];
 })
 
+const scrollToContact = () => {
+    const contact = document.getElementById('contact');
+    contact.scrollIntoView({ behavior: 'smooth' });
+}
+
 </script>
 
 <template>
@@ -34,7 +39,7 @@ watch(locale, () => {
                 <Techicon icon="git,postman" size="medium"></Techicon>
             </div>
 
-            <Button :text="t('introduction.button.label')" href="#contact" size="large"></Button>
+            <Button :text="t('introduction.button.label')" size="large" @click="scrollToContact" ></Button>
         </div>
     </section>
 </template>
