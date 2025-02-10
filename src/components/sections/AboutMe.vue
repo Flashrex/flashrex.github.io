@@ -1,9 +1,11 @@
 <script setup>
+import Techicon from '../techicon.vue';
+
 </script>
 
 <template>
     <section id="aboutme">
-        <img src="../../assets/Bild1.jpg" alt="passfoto" loading="lazy">
+        <img src="../../assets/Bild1.webp" alt="passfoto" loading="lazy">
 
         <div class="text-container">
             <h3>{{ $t('general.about-me') }}</h3>
@@ -14,12 +16,9 @@
             </div>
 
             <div class="techcontainer">
-                <a href="https://www.github.com/flashrex" target="_blank"><img class="techicon" alt="github_logo"
-                        src="https://skillicons.dev/icons?i=github"></a>
-                <a href="https://www.linkedin.com/in/dominik-duda-89b10b229/" target="_blank"><img class="techicon"
-                        alt="linkedin_logo" src="https://skillicons.dev/icons?i=linkedin"></a>
-                <a href="mailto:duda.dominik96@gmail.com" target="_blank"><img class="techicon" alt="gmail_logo"
-                        src="https://skillicons.dev/icons?i=gmail"></a>
+                <Techicon href="https://www.github.com/flashrex" icon="github"></Techicon>
+                <Techicon href="https://www.linkedin.com/in/dominik-duda-89b10b229/" icon="linkedin"></Techicon>
+                <Techicon href="mailto:dduda.dominik96@gmail.com" icon="gmail"></Techicon>
             </div>
         </div>
     </section>
@@ -49,12 +48,6 @@ section>img {
     width: 350px;
     aspect-ratio: 1/1;
     object-fit: cover;
-
-    transition: top 0.5s;
-}
-
-section>img:hover {
-    top: -7.5rem;
 }
 
 .text-container {
@@ -75,16 +68,6 @@ section>img:hover {
 .techcontainer {
     display: flex;
     gap: 1rem;
-}
-
-.techicon {
-    width: 40px;
-    aspect-ratio: 1/1;
-    transition: transform 1s;
-}
-
-.techicon:hover {
-    transform: translateY(-0.2rem);
 }
 
 h3 {

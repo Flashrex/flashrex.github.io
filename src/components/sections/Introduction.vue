@@ -5,6 +5,7 @@ import GlowingText from '../glowingText.vue';
 
 import { useI18n } from 'vue-i18n';
 import { ref, watch } from 'vue';
+import Techicon from '../techicon.vue';
 
 const { t, locale } = useI18n();
 
@@ -26,11 +27,11 @@ watch(locale, () => {
             <VueWriter :array="vueWriterArr" :delay="1000"></VueWriter>
 
             <div class="techstack">
-                <img class="techicon" src="https://skillicons.dev/icons?i=php,ts" alt="logo_php_ts">
-                <img class="techicon" src="https://skillicons.dev/icons?i=html,css" alt="logo_html_css">
-                <img class="techicon" src="https://skillicons.dev/icons?i=mysql,mongodb" alt="logo_mysql_mongodb">
-                <img class="techicon" src="https://skillicons.dev/icons?i=laravel,vue" alt="logo_laravel_vue">
-                <img class="techicon" src="https://skillicons.dev/icons?i=git,postman" alt="logo_git_postman">
+                <Techicon icon="php,ts" size="medium"></Techicon>
+                <Techicon icon="html,css" size="medium"></Techicon>
+                <Techicon icon="mysql,mongodb" size="medium"></Techicon>
+                <Techicon icon="laravel,vue" size="medium"></Techicon>
+                <Techicon icon="git,postman" size="medium"></Techicon>
             </div>
 
             <Button :text="t('introduction.button.label')" href="#contact" size="large"></Button>
@@ -63,18 +64,6 @@ h3 {
     margin-top: 0.5rem;
     display: flex;
     gap: 1rem;
-}
-
-.techicon {
-    width: 75px;
-    aspect-ratio: 1/1;
-    transition: transform 1s;
-}
-
-.techicon:hover,
-.techicon:active {
-    cursor: pointer;
-    transform: scale(1.1);
 }
 
 
