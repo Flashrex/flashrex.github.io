@@ -3,11 +3,9 @@ import Introduction from './components/sections/Introduction.vue';
 import AboutMe from './components/sections/AboutMe.vue';
 import Projects from './components/sections/Projects.vue';
 import Contact from './components/sections/Contact.vue';
-import { onMounted, ref } from 'vue';
+import { ref } from 'vue';
 
-import { useI18n } from 'vue-i18n';
-
-const { locale } = useI18n();
+import Language from './components/language.vue';
 
 const projects = ref([
   {
@@ -53,28 +51,6 @@ const projects = ref([
     live: ""
   }
 ])
-
-
-onMounted(() => {
-  switch (navigator.language) {
-    case "de-DE":
-    case "de":
-      locale.value = 'de-DE';
-      break;
-    case "en-US":
-    case "en-GB":
-    case "en":
-    locale.value = 'en-US';
-      break;
-    case "fi-FI":
-    case "fi":
-      locale.value = 'fi-FI';
-      break;
-    default:
-      locale.value = 'en-US';
-      break;
-  }
-})
 </script>
 
 <template>
@@ -83,6 +59,7 @@ onMounted(() => {
   </header>
 
   <main>
+    <Language />
     <Introduction />
     <AboutMe />
     <Projects :project1="projects[0]" :project2="projects[1]"></Projects>

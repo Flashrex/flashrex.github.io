@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "flag-icons": "^7.3.2",
     "vue": "^3.3.11",
     "vue-i18n": "^10.0.5",
     "vue-writer": "^1.2.0"

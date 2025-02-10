@@ -1,4 +1,5 @@
-import './assets/main.css'
+import './assets/main.css';
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 import { createApp } from 'vue'
 import { createI18n } from 'vue-i18n'
@@ -10,11 +11,11 @@ import fiFI from './locales/fi-FI.json'
 import App from './App.vue'
 
 const i18n = createI18n({
-    locale: 'de-DE',
+    locale: 'de',
     messages: {
-        'de-DE': deDE,
-        'en-US': enUS,
-        'fi-FI': fiFI
+        'de': deDE,
+        'us': enUS,
+        'fi': fiFI
     }
 })
 
