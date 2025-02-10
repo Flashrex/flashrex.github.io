@@ -1,30 +1,31 @@
 <script setup>
 
-const props = defineProps(['index', 'data', 'useLanguage'])
+import Button from './button.vue'
+
+const props = defineProps(['index', 'data'])
 
 </script>
 
 <template>
     <div v-if="index % 2 == 0" class="project">
         <div class="text-container">
-            <h3>{{ props.data.headline[props.useLanguage] }}</h3>
-            <p>{{ props.data.description[props.useLanguage] }}</p>
+            <h3>{{ $t(`project.${props.data.name}.headline`) }}</h3>
+            <p>{{ $t(`project.${props.data.name}.description`) }}</p>
             <div class="tag-container">
                 <span v-for="(item, index) in props.data.tags" class="tag">{{ item }}</span>
             </div>
             <div class="button-container">
-                <a v-if="props.data.github != ''" :href="props.data.github" target="_blank" class="button-link">
-                    <button>
-                        <span class="button-text">Code</span>
+                <Button v-if="props.data.github" text="Code" :href="props.data.github">
+                    <template #post>
                         <img src="../assets/icons/github_alt.svg" alt="external_github_icon">
-                    </button>
-                </a>
-                <a v-if="props.data.live != ''" :href="props.data.live" target="_blank" class="button-link">
-                    <button>
-                        <span class="button-text">Live Demo</span>
+                    </template>
+                </Button>
+
+                <Button v-if="props.data.live" text="Code" :href="props.data.live">
+                    <template #post>
                         <img src="../assets/icons/external.svg" alt="external_link_icon">
-                    </button>
-                </a>
+                    </template>
+                </Button>
             </div>
         </div>
         <div class="image-container" :style="{ backgroundImage: 'url(' + `${props.data.image}` + ')' }">
@@ -35,24 +36,23 @@ const props = defineProps(['index', 'data', 'useLanguage'])
         <div class="image-container" :style="{ backgroundImage: 'url(' + `${props.data.image}` + ')' }">
         </div>
         <div class="text-container">
-            <h3>{{ props.data.headline[props.useLanguage] }}</h3>
-            <p>{{ props.data.description[props.useLanguage] }}</p>
+            <h3>{{ $t(`project.${props.data.name}.headline`) }}</h3>
+            <p>{{ $t(`project.${props.data.name}.description`) }}</p>
             <div class="tag-container">
                 <span v-for="(item, index) in props.data.tags" class="tag">{{ item }}</span>
             </div>
             <div class="button-container">
-                <a v-if="props.data.github != ''" :href="props.data.github" target="_blank" class="button-link">
-                    <button>
-                        <span class="button-text">Code</span>
-                        <img src="../assets/icons/github_alt.svg" alt="">
-                    </button>
-                </a>
-                <a v-if="props.data.live != ''" :href="props.data.live" target="_blank" class="button-link">
-                    <button>
-                        <span class="button-text">Live Demo</span>
-                        <img src="../assets/icons/external.svg" alt="">
-                    </button>
-                </a>
+                <Button v-if="props.data.github" text="Code" :href="props.data.github">
+                    <template #post>
+                        <img src="../assets/icons/github_alt.svg" alt="external_github_icon">
+                    </template>
+                </Button>
+
+                <Button v-if="props.data.live" text="Code" :href="props.data.live">
+                    <template #post>
+                        <img src="../assets/icons/external.svg" alt="external_link_icon">
+                    </template>
+                </Button>
             </div>
         </div>
     </div>

@@ -1,40 +1,24 @@
 <script setup>
-
-const props = defineProps(['useLanguage'])
-
-const data = {
-    text_0: [
-        "Kontakt",
-        "Contact",
-        "Yhteystiedot"
-    ],
-    text_1: [
-        "Standort",
-        "Location",
-        "Sijainti"
-    ]
-}
-
 </script>
 
 <template>
     <section>
         <div class="contact-container">
-            <h3>{{ data.text_0[props.useLanguage] }}</h3>
+            <h3>{{ $t('general.contact') }}</h3>
             <div>
                 <div class="container">
                     <a href="https://www.google.com/maps/dir/Frankfurt/Frankfurt/@50.1109699,8.6409273,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47bd096f477096c5:0x422435029b0c600!2m2!1d8.6821267!2d50.1109221!1m5!1m1!1s0x47bd096f477096c5:0x422435029b0c600!2m2!1d8.6821267!2d50.1109221!3e2?entry=ttu"
                         target="_blank">
-                        <img src="../assets/icons/earth.svg" alt="location_icon">
+                        <img src="../../assets/icons/earth.svg" alt="location_icon">
                     </a>
                     <div>
-                        <p class="headline">{{ data.text_1[props.useLanguage] }}</p>
+                        <p class="headline">{{ $t('general.location') }}</p>
                         <p class="text">Germany, Frankfurt</p>
                     </div>
                 </div>
                 <div class="container">
                     <a href="mailto:duda.dominik96@gmail.com" target="_blank">
-                        <img src="../assets/icons/mail.svg" alt="mail_icon">
+                        <img src="../../assets/icons/mail.svg" alt="mail_icon">
                     </a>
                     <div>
                         <p class="headline">Mail</p>
@@ -43,7 +27,7 @@ const data = {
                 </div>
                 <div class="container">
                     <a href="https://www.linkedin.com/in/dominik-duda-89b10b229/" target="_blank">
-                        <img src="../assets/icons/linkedin.svg" alt="linkedin_icon">
+                        <img src="../../assets/icons/linkedin.svg" alt="linkedin_icon">
                     </a>
                     <div>
                         <p class="headline">LinkedIn</p>
@@ -53,14 +37,13 @@ const data = {
             </div>
         </div>
         <div class="footer">
-            <p>Copyright © 2024. All rights are reserved</p>
+            <p>Copyright © {{ (new Date).getFullYear() }}. All rights are reserved</p>
         </div>
     </section>
 </template>
 
 <style scoped>
 section {
-    scroll-snap-align: start;
     position: relative;
     width: 100%;
     height: 100vh;

@@ -1,0 +1,42 @@
+{
+    "general": {
+        "about-me": "Über mich",
+        "contact": "Kontakt",
+        "location": "Standort"
+    },
+    "introduction": {
+        "headline": "Hallo, ich bin",
+        "button": {
+            "label": "Kontaktiere mich"
+        },
+        "software-developer": "Software-Entwickler",
+        "student": "Student",
+        "description": "Ich bin ein Student der Informatik und Software-Entwickler. Ich habe Erfahrung in der Entwicklung von Web-Applikationen und Discord Bots. Ich bin immer auf der Suche nach neuen Herausforderungen und Projekten."
+    },
+    "project": {
+        "valomizer": {
+            "headline": "Valomizer",
+            "description": "Valomizer ist eine App um zufällig Maps/Agents für das Spiel Valorant auszuwählen."
+        },
+        "bugtracker": {
+            "headline": "Bugtracker",
+            "description": "Dies ist ein Bugtracker. Es ist möglich Bugs zu melden, zu bearbeiten und zu schließen. Es gibt Teams und man kann innerhalb eines Teams über die Bugs diskutieren."
+        },
+        "tesla-clone": {
+            "headline": "Tesla Clone",
+            "description": "Dies ist ein Klon der offiziellen Website tesla.com. (Stand: Dezember 2023) Ich habe dabei darauf geachtet die Website möglichst genau nachzubauen und auch Effekte wie den Scroll-Snap-Effekt zu implementieren."
+        },
+        "discord-bot": {
+            "headline": "Codingstube Discord Bot",
+            "description": "Dies ist ein Discord Bot den ich für meinen Discord Server mit rund 1000 Mitgliedern erstellt habe."
+        },
+        "artlocker": {
+            "headline": "Artlocker - Kunst Marktplatz",
+            "description": "Diese WebApplikation ist als Uniprojekt entstanden. Nutzer können Bilder zum Verkauf einstellen, haben ein eigenes Profil, können aktuelle und beliebte Angebote einsehen und es werden Angebotsaufrufe sowie Favorisierungen getrackt."
+        },
+        "quiz-app": {
+            "headline": "Quiz App",
+            "description": "Diese App ist ein Framework mit dem man eigene Quizzes erstellen kann um sich zum Beispiel für eine Prüfung vorzubereiten. Es gibt verschiedene Fragetypen wie Single- und Multiple-Choice-Fragen und weitere."
+        }
+    }
+}

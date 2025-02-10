@@ -1,0 +1,42 @@
+{
+    "general": {
+        "about-me": "Tietoja minusta",
+        "contact": "Ota yhteyttä",
+        "location": "Sijainti"
+    },
+    "introduction": {
+        "headline": "Hei, minä olen",
+        "button": {
+            "label": "Ota yhteyttä"
+        },
+        "software-developer": "Ohjelmistokehittäjä",
+        "student": "Opiskelija",
+        "description": "Olen opiskelija B.Sc. Applied Computer Science ja rakastan kehittää verkkosivustoja ja sovelluksia. Tulin tietoiseksi ohjelmoinnista modauksen kautta ennen opintojani ja rakastan kokeilla uusia asioita. Tällä hetkellä työskentelen paljon kehyksillä kuten Vue ja Laravel frontendissä ja backendissä."
+    },
+    "project": {
+        "valomizer": {
+            "headline": "Valomizer",
+            "description": "Valomizer on sovellus, jolla voidaan valita satunnaisesti karttoja/agentteja peliin Valorant."
+        },
+        "bugtracker": {
+            "headline": "Bugtracker",
+            "description": "Tämä on bugtracker. On mahdollista raportoida, muokata ja sulkea bugeja. On tiimejä ja voit keskustella bugeista tiimin sisällä."
+        },
+        "tesla-clone": {
+            "headline": "Tesla Clone",
+            "description": "Tämä on klooni virallisesta verkkosivustosta tesla.com. (Joulukuu 2023) Huolehdin, että verkkosivusto luodaan mahdollisimman tarkasti ja toteutetaan myös vaikutuksia, kuten vieritysruudun vaikutus."
+        },
+        "discord-bot": {
+            "headline": "Codingstube Discord Bot",
+            "description": "Tämä on Discord Bot, jonka loin Discord-palvelimelleni, jossa on noin 1000 jäsentä."
+        },
+        "artlocker": {
+            "headline": "Artlocker - Kunst Marktplatz",
+            "description": "Tämä verkkosovellus luotiin yliopistoprojektina. Käyttäjät voivat ladata kuvia myyntiin, heillä on oma profiili, he voivat tarkastella nykyisiä ja suosittuja tarjouksia ja tarjousten kutsuja ja suosikkeja seurataan."
+        },
+        "quiz-app": {
+            "headline": "Quiz App",
+            "description": "Tämä sovellus on kehys, jonka avulla voit luoda omia tietovisoja valmistautuaksesi esimerkiksi tenttiin. Kysymyksiä on erilaisia, kuten yksittäisiä ja monivalintakysymyksiä ja paljon muuta."
+        }
+    }
+}

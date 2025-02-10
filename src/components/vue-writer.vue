@@ -104,4 +104,56 @@ onMounted(() => {
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.typed {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+/* Styling Typewriter effect */
+.is-typed span.caret {
+    margin-left: 5px;
+    display: inline-flex;
+    align-items: flex-end;
+    background-color: var(--color-text);
+    animation: blink 1s infinite;
+}
+
+.is-typed span.underscore {
+    width: 3em;
+    height: 8px;
+}
+
+.is-typed span.cursor {
+    width: 8px;
+    height: 3.5em;
+}
+
+.is-typed span.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    49% {
+        background-color: var(--color-text);
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    99% {
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 768px) {
+    .typed {
+        font-size: 2em;
+    }
+
+    .is-typed span.cursor {
+        height: 2em;
+        width: 4px;
+    }
+}</style>

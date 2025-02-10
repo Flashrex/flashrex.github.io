@@ -1,17 +1,15 @@
 <script setup>
 
-import Project from './Project.vue';
+import Project from '../project.vue';
 
-const props = defineProps(["project1", "project2", "useLanguage"])
-
-
+const props = defineProps(["project1", "project2"])
 </script>
 
 <template>
     <section>
         <div class="project-container">
-            <Project :index="0" :data="props.project1" :useLanguage="props.useLanguage"></Project>
-            <Project :index="1" :data="props.project2" :useLanguage="props.useLanguage"></Project>
+            <Project :index="0" :data="props.project1"></Project>
+            <Project :index="1" :data="props.project2"></Project>
         </div>
 
     </section>
@@ -19,7 +17,6 @@ const props = defineProps(["project1", "project2", "useLanguage"])
 
 <style scoped>
 section {
-    scroll-snap-align: start;
     position: relative;
     width: 100%;
     height: 100vh;

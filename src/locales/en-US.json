@@ -1,0 +1,42 @@
+{
+    "general": {
+        "about-me": "About me",
+        "contact": "Contact",
+        "location": "Location"
+    },
+    "introduction": {
+        "headline": "Hello, I am",
+        "button": {
+            "label": "Contact me"
+        },
+        "software-developer": "Software Developer",
+        "student": "Student",
+        "description": "I am a student in B.Sc. Applied Computer Science and I love to develop websites and applications. I became aware of programming through modding before I started my studies and I love to try out new things. At the moment I am working a lot with frameworks like Vue and Laravel in frontend and backend."
+    },
+    "project": {
+        "valomizer": {
+            "headline": "Valomizer",
+            "description": "Valomizer is an app to randomly select maps/agents for the game Valorant."
+        },
+        "bugtracker": {
+            "headline": "Bugtracker",
+            "description": "This is a bugtracker. It is possible to report, edit and close bugs. There are teams and you can discuss the bugs within a team."
+        },
+        "tesla-clone": {
+            "headline": "Tesla Clone",
+            "description": "This is a clone of the official website tesla.com. (As of December 2023) I made sure to recreate the website as closely as possible and also to implement effects such as the scroll snap effect."
+        },
+        "discord-bot": {
+            "headline": "Codingstube Discord Bot",
+            "description": "This is a Discord Bot I created for my Discord Server with around 1000 members."
+        },
+        "artlocker": {
+            "headline": "Artlocker - Kunst Marktplatz",
+            "description": "This web application was created as a university project. Users can upload pictures for sale, have their own profile, can view current and popular offers and offer calls and favorites are tracked."
+        },
+        "quiz-app": {
+            "headline": "Quiz App",
+            "description": "This app is a framework with which you can create your own quizzes to prepare for an exam, for example. There are different types of questions such as single and multiple choice questions and more."
+        }
+    }
+}

@@ -1,30 +1,15 @@
 <script setup>
-const props = defineProps(['useLanguage']);
-
-const data = {
-    text_0: [
-        "Über mich",
-        "About me",
-        "Minusta"
-    ],
-    text_1: [
-        "Ich bin Student im B.Sc. Angewandte Informatik und entwickle leidenschaftlich gerne Webseiten und -applikationen. Ich bin bereits vor meinem Studium durchs Modding auf die Programmierung aufmerksam geworden und liebe es mich stets neu auszuprobieren. Derzeit beschäftige ich mich viel im Front- und Backend mit Frameworks wie Vue und Laravel",
-        "I am a student in B.Sc. Applied Computer Science and I love to develop websites and applications. I became aware of programming through modding before I started my studies and I love to try out new things. At the moment I am working a lot with frameworks like Vue and Larabel in frontend and backend.",
-        "Olen opiskelija B.Sc. Applied Computer Science ja rakastan kehittää verkkosivustoja ja sovelluksia. Tulin tietoiseksi ohjelmoinnista modauksen kautta ennen opintojani ja rakastan kokeilla uusia asioita. Tällä hetkellä työskentelen paljon kehyksillä kuten Vue ja Laravel frontendissä ja backendissä."
-    ]
-}
-
 </script>
 
 <template>
     <section id="aboutme">
-        <img src="../assets/Bild1.jpg" alt="passfoto" loading="lazy">
+        <img src="../../assets/Bild1.jpg" alt="passfoto" loading="lazy">
 
         <div class="text-container">
-            <h3>{{ data.text_0[props.useLanguage] }}</h3>
+            <h3>{{ $t('general.about-me') }}</h3>
             <div>
                 <p>
-                    {{ data.text_1[props.useLanguage] }}
+                    {{  $t('introduction.description') }}
                 </p>
             </div>
 
@@ -42,7 +27,6 @@ const data = {
 
 <style scoped>
 section {
-    scroll-snap-align: start;
     position: relative;
     width: 100%;
     height: 100vh;
