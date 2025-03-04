@@ -24,7 +24,7 @@ const computedPadding = computed(() => {
 </script>
 
 <template>
-    <a :href="props.href">
+    <a :href="props.href" target="_blank">
         <button :style="{ padding: computedPadding }">
             <slot name="pre"></slot>
             <span class="button-text">{{ props.text }}</span>
